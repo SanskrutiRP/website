@@ -13,18 +13,20 @@
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
     crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <div class="contents">
-    <div class="header">
+  <div class="header">
       <div class="combo"><img alt="image" src="gallery/icon.png">
       <p class="logo">NetSepio</p></div>
       <img id="toggle" src="gallery/menu.png" alt="image">
     </div>
+  <div class="contents">
     <div class="main">
       <div class="text">
         <h1>Browser Extension</h1>
         <h2>The new norm</h2>
+        <a href="explore/explore.html">Explore</a>
       </div>
       <div class="svg_here"></div>
     </div>
@@ -49,15 +51,15 @@
         <div class="contact_form">
           <form >
             <label>Full Name</label>
-            <input type="text" name="fname" required="true" placeholder="Harry Potter">
+            <input type="text" name="fname" required="true" id="name" placeholder="Harry Potter">
             <label>Email Id</label>
-            <input type="email" name="emailid" required="true" placeholder="your@mail.com">
-            <label>Subject</label>
-            <input type="text" name="sub" required="true" placeholder="Want help">
+            <input type="email" name="emailid" required="true" id="email" placeholder="your@mail.com">
+            <label>Subject</label> 
+            <input type="text" name="sub" required="true" id="sub" placeholder="Want help">
             <label>Message</label>
-            <textarea rows="5" cols="30" required="true" placeholder="Your Message"></textarea>
+            <textarea rows="5" cols="30" required="true" id="msg" placeholder="Your Message"></textarea>
             <div class="btns">
-              <input id="submit" type="submit" name="send" value="Send">
+              <input class="SendEmail" id="sendmail" type="submit" name="send" value="Send">
               <input id="cancel" type="reset" name="cancel" value="Cancel">
             </div>
           </form>
@@ -76,6 +78,7 @@
     </ul>
   </div>
   <script src="app.js"></script>
+  <script src="mailTo.js"></script>
   </div>
 </body>
 </html>

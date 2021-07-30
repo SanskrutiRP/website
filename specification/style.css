@@ -22,6 +22,43 @@ body h3{
 h3:hover{
     text-decoration: underline;
 }
+.header{
+    width: 95%;
+    position: absolute;
+    display: flex;
+    height: 5%;
+    font-size: 25px;
+    padding: 1rem;
+    background-color: #121212;
+    z-index: 1;
+}
+.combo img{
+    animation: 3s scaleImg infinite;
+}
+@keyframes scaleImg{
+    0%{ transform: scale(1.0); }
+    50%{ transform: scale(0.8); }
+    100%{ transform: scale(1.0); }
+}
+.combo{
+  display: flex;
+}
+.logo{
+    position: relative;
+    text-align: center;
+    padding: 0 1rem;
+    margin: 0;
+    transition: .3s all ease;
+}
+.logo:hover{
+  color: #ff9f1c;
+}
+#toggle{
+  position: absolute;
+  height:25px;
+  width: 30px;
+  right: 1%;
+}
 .dia{
     width: 60%;
     padding: 1rem;
@@ -42,29 +79,6 @@ h3:hover{
 }
 .svg_arch:hover{
     transform: scale(1.5);
-}
-.header{
-    width: 100%;
-    position: fixed;
-    display: flex;
-    height: 5%;
-    font-size: 25px;
-    padding: 1rem;
-    background-color: #121212;
-    z-index: 1;
-}
-.header img{
-    animation: 3s scaleImg infinite;
-}
-@keyframes scaleImg{
-    0%{ transform: scale(1.0); }
-    50%{ transform: scale(0.8); }
-    100%{ transform: scale(1.0); }
-}
-.logo{
-    text-align: center;
-    padding: 0 1rem;
-    margin: 0;
 }
 .section{
     text-align: center;
@@ -282,10 +296,7 @@ h4{
 h4:hover{
     text-decoration: underline;
 }
-.website__rights{
-    text-align: center;
-    padding: 0.5rem;
-}
+
 
 @media (max-width: 360px){
     .section{

@@ -15,8 +15,8 @@ body a:hover{
     color: #EC970F;
 }
 .header{
-    width: 100%;
-    position: fixed;
+    width: 95%;
+    position: absolute;
     display: flex;
     height: 5%;
     font-size: 25px;
@@ -24,7 +24,7 @@ body a:hover{
     background-color: #121212;
     z-index: 1;
 }
-.header img{
+.combo img{
     animation: 3s scaleImg infinite;
 }
 @keyframes scaleImg{
@@ -32,10 +32,24 @@ body a:hover{
     50%{ transform: scale(0.8); }
     100%{ transform: scale(1.0); }
 }
+.combo{
+  display: flex;
+}
 .logo{
+    position: relative;
     text-align: center;
     padding: 0 1rem;
     margin: 0;
+    transition: .3s all ease;
+}
+.logo:hover{
+  color: #ff9f1c;
+}
+#toggle{
+  position: absolute;
+  height:25px;
+  width: 30px;
+  right: 1%;
 }
 .section{
     text-align: center;

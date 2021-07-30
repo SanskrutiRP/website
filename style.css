@@ -1,61 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-body, html{
-    height: 100%;
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.8em;
-    color: #fff;
-    background-color: #121212;
-}
-body a{
-    text-decoration: none;
-    color: #fff;
-}
-body a:hover{
-    color: #EC970F;
-}
+
 .contents{
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
 }
-.header{
-    width: 100%;
-    position: absolute;
-    display: flex;
-    height: 5%;
-    font-size: 25px;
-    padding: 1rem;
-    background-color: #121212;
-    z-index: 1;
-}
-.combo img{
-    animation: 3s scaleImg infinite;
-}
-@keyframes scaleImg{
-    0%{ transform: scale(1.0); }
-    50%{ transform: scale(0.8); }
-    100%{ transform: scale(1.0); }
-}
-.combo{
-  display: flex;
-}
-.logo{
-    position: relative;
-    text-align: center;
-    padding: 0 1rem;
-    margin: 0;
-    transition: .3s all ease;
-}
-.logo:hover{
-  color: #ff9f1c;
-}
-#toggle{
-  position: absolute;
-  height:25px;
-  width: 30px;
-  right: 6%;
-}
+
 .main{
   width: 90%;
   margin: 3rem 1rem 0 1rem;
@@ -63,7 +12,7 @@ body a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  min-height: 90vh;
   background-color: #ff9f1c;
 }
 .mid{
@@ -81,8 +30,24 @@ body a:hover{
 .text{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 1rem 3rem;
   width: 60%;
+}
+.text a{
+    background-color: white;
+    color: black;
+    padding: .5rem 3rem;
+    transition: .2s all ease-in;
+}
+.text a:hover{
+    letter-spacing: 2px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px white;
+    text-decoration: underline;
 }
 .main h1, h2, h3, p{
   text-align: center;
@@ -210,40 +175,14 @@ textarea{
     text-align: center;
 }
 
-.menu{
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  padding: 0 2rem;
-  width: 15%;
-  height: 100vh;
-  background-color: white;
-  color: black;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5em;
-}
-.menu a{
-  text-decoration: none;
-  color: black;
-}
-.menu li{
-  list-style: none;
-  padding: .2rem 0;
-  transition: .3s all ease;
-}
-.menu li:hover{
-  color: #ff9f1c;
-}
-.menu:hover{
-  background-color: #ffe;
-}
 
 @media(max-width: 760px){
     .header{
         height: 4%;
         font-size: 20px;
+    }
+    .text a{
+        padding: .2rem 1rem;
     }
     #toggle{
       right: 18%;
@@ -296,8 +235,5 @@ textarea{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .menu{
-      width: 100%;
     }
 }

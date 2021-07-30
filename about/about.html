@@ -7,18 +7,14 @@
     <title>About Us</title>
     <link rel="icon" href="../gallery/icon.ico">
     <link rel="stylesheet" href="style.css" />
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-    crossorigin="anonymous"
-    />
+    <link rel="stylesheet" type="text/css" href="../main.css">
 </head>
 <body>
-    <a href="../index.html"><div class="header">
-      <img alt="image" src="../gallery/icon.png">
-      <p class="logo">NetSepio</p>
-    </div></a>
+    <div class="header">
+      <div class="combo"><img alt="image" src="../gallery/icon.png">
+      <p class="logo">NetSepio</p></div>
+      <img id="toggle" src="../gallery/menu.png" alt="image">
+    </div>
     <section class="section section-light">
       <div class="svg_abt"></div>
       <div class="about">
@@ -57,39 +53,18 @@
       </P>
       </div>
     </section>
-    <!-- <div class="contact">
-        <div class="left">
-          <h4>Contact us</h4>
-          <div class="addr">
-            <p> Sector 8, Dwarka New Delhi, India 110077</p>
-            <p>+91 895 1415 895</p>
-            <p>connect@lazarus.network</p>
-          </div>
-          <div class="handles">
-            <a href="https://www.facebook.com/NetSepio/"><img src="../gallery/facebook.svg"></a>
-            <a href="https://github.com/NetSepio"><img src="../gallery/github.svg"></a>
-            <a href="https://twitter.com/NetSepio"><img src="../gallery/twitter.svg"></a>
-          </div>
-        </div>
-        <div class="contact_form">
-          <form >
-            <label>Full Name</label>
-            <input type="text" name="fname" required="true">
-            <label>Email Id</label>
-            <input type="email" name="emailid" required="true">
-            <label>Subject</label>
-            <input type="text" name="sub" required="true">
-            <label>Message</label>
-            <textarea rows="5" cols="30" required="true"></textarea>
-            <div class="btns">
-              <input id="submit" type="submit" name="send" value="Send">
-              <input id="cancel" type="reset" name="cancel" value="Cancel">
-            </div>
-          </form>
-        </div>
-    </div> -->
     <div class="footer">
     <p class="website__rights">© NetSepio 2021. All rights reserved || by <a href="https://lazarus.network/">Lazarus Network</a></p>
   </div>
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="../features/feature.html">Features</a></li>
+      <li><a href="../specification/specification.html">Specifications</a></li>
+      <li id="close">Close</li>
+    </ul>
+  </div>
+  <script src="../app.js"></script>
 </body>
 </html>

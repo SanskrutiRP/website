@@ -7,12 +7,14 @@
     <title>Features</title>
     <link rel="icon" href="../gallery/icon.ico">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../main.css">
 </head>
 <body>
-    <a href="../index.html"><div class="header">
-      <img alt="image" src="../gallery/icon.png">
-      <p class="logo">NetSepio</p>
-    </div></a>
+    <div class="header">
+      <div class="combo"><img alt="image" src="../gallery/icon.png">
+      <p class="logo">NetSepio</p></div>
+      <img id="toggle" src="../gallery/menu.png" alt="image">
+    </div>
     <section class="section overview">
       <div class="ovrvw">
         <h2>OVERVIEW</h2>
@@ -79,7 +81,17 @@
     </section>
     <div class="footer">
     <p class="website__rights">© NetSepio 2021. All rights reserved || by <a href="https://lazarus.network/">Lazarus Network</a></p>
+    </div>
+    <div class="menu" id="menu">
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about/about.html">About</a></li>
+      <li><a href="feature.html">Features</a></li>
+      <li><a href="../specification/specification.html">Specifications</a></li>
+      <li id="close">Close</li>
+    </ul>
   </div>
+  <script src="../app.js"></script>
 </body>
 </html>
 
