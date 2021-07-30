@@ -4,77 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>specification page</title>
-    <link rel="stylesheet" href="/specification/style.css" />
-
+    <title>Specification</title>
+    <link rel="icon" href="../gallery/icon.ico">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="pimg1">
-      <div class="ptext">
-        <img src="/gallery/icon.png">
-        <span class="border">
-          NetSepio
-        </span>
-      </div>
-    </div>
-
-    <section class="section section-light">
-      <h2>SPECIFICATIONS</h2>
-      <h2>Smart Contract</h2>
-      <p>1. Facilitate submit & delete vote, block, unblock, ban, unban operations to users & moderators
-        <br>
-      </p>
-      <p>2. Mint standard ERC721 Tokens
-        <br></p>
-        <P>3. Have the NFT minted against a contract specific to the domain which has votes for 
-            various website links<br></P>
+    <a href="../index.html"><div class="header">
+      <img alt="image" src="../gallery/icon.png">
+      <p class="logo">NetSepio</p>
+    </div></a>
+    <section class="section">
+      <div class="browser">
+        <h3>Browser Extension</h3>
+        <div class="text"><p>Users install the Browser extension to view the ratings and review for the websites/domain. </p>
+        <p>Also they have the option to submit votes for websites of their choice.</p>
+        <p>Welcome Screen: Similar to splash screen</p>
+        <p>Intro Screens: Introduces NetSepio functionalities & benefits</p>
+        <p>Home Screen: Helps users get the information related to the website they are surfing</p>
+        <p>Vote: Helps user with submitting a vote for a website after getting the voter role</p>
+        <p class="settings">Settings: </p><p></p>
+              <p class="language">Language: Change extension default language</p>
+              <p class="wallet">Wallet - Create/Import wallet with 24 words seed phrase</p>
+              <p class="profile">Profile - Update Profile Details</p>
+        
+        <p class="cover"></p>
+        </div>
+      </div>      
     </section>
-
-    <div class="pimg2">
-      <div class="ptext">
-        <span class="border trans">
-          NetSepio
-        </span>
+    <section class="section">
+      <div class="app">
+        <h3>Mobile Application</h3>
+        <div class="text_app">
+          <p>Users install the android/iOS App to view the ratings and review for the websites/domain.  </p>
+          <p>Also they have the option to submit votes for websites of their choice.</p>
+          <p>Splash Screen</p>
+          <p>Intro Screens: Introduces NetSepio functionalities & benefits</p>
+          <p>Home Screen: Helps users get the information related to any website.</p>
+          <p>Submit Review: Helps user with submitting a vote for a website after getting the voter role</p>
+          <p>Reviews</p>
+          <p>Settings: </p>
+          <p>Language: Change default language</p>
+          <p>Wallet - Create/Import wallet with 24 words seed phrase</p>
+          <p>Profile - Update Profile Details</p>
+          <p></p>
+        </div>
       </div>
-    </div>
-    <section class="section section-dark">
-      <h2>Browser Extension / Mobile App</h2>
-      <P>
-        Allow create and import wallet options for the users<br>
-      </P>
-      <p>Allow vote from user account once they are given voter role<br></p>
-      <p>Show the domain status (safe/unsafe) with tags & number of reviews<br></p>
     </section>
-
-    <div class="pimg3">
-      <div class="ptext">
-        <span class="border">
-          NetSepio
-        </span>
+    <section class="section">
+      <div class="dia">
+        <div class="svg_arch"></div>
+        <h3>Working Diagram</h3>
       </div>
-    </div>
-    <section class="section section-dark">
-      <h2>API Gateways / Public APIs</h2>
-      <P>
-        1. Create wallet address to allow voting<br>
-      </P>
-      <p>2. Check ETH, token balance <br></p>
-      <p>3. Check for Votes, Warns, Bans<br></p>
+    </section> 
+    <section class="section options">
+      <h3>Master Node Services</h3>
+      <div class="text_service">
+          <p>These services facilitate operations pertaining to the moderator role.</p>
+          <p>The services can only be called from the API service and are shielded from being accessible publicly. </p>
+          <p>They directly interact with the blockchain smart contract and have access to the wallet private key having moderator role in the NetSepio Smart Contract.</p>
+          <div class="fun">
+            <p>Functionalities:</p>
+            <p>Web Scraping</p>
+            <p>Machine Learning model for sentiment analysis</p>
+            <p>Smart Contract Events Logging</p>
+            <p>Give Voter Role to new user wallets</p>
+          </div>
+      </div>
     </section>
-
-    <div class="pimg1">
-      <div class="ptext">
-        <span class="border">
-          NetSepio
-    <br><br>
-    <div class="text">
-      <a href="../index.html">Home</a>
-    </div>
-  </span>
+    <section class="section">
+      <h3>API Gateway</h3>
+      <div class="text_api">
+        <h4>NetSepio API Gateway provides interaction with the blockchain smart contract and data retrieval supported by an authentication middleware. </h4>
+        <h4>Endpoints:</h4>
+        <div class="endpoint">
+          <p>/api/v1.0/authenticate - POST - Issue PASETO against a signed message (personal.sign) containing the Unique authId within the time limit. Also creates basic profile details</p>
+        <p>/api/v1.0/verify - POST - Verify the user’s twitter account against a specific tweet - For getting a verified status on their profile*</p>
+        <p>/api/v1.0/profile - PATCH - Users can update their basic profile details.</p>
+        <p>/api/v1.0/registertovote - POST - Request voting rights to submit votes</p>
+        <p>/api/v1.0/artifact - POST - Store NFT metadata on IPFS</p>
+        <p>/api/v1.0/vote - POST - Submit vote against a unique websiteURL along with storing the NFT metadata</p>
+        <p>/api/v1.0/vote - DELETE - Delete vote against a unique websiteURL*</p>
+        <p>/api/v1.0/getVote - GET - Get vote details against a websiteURL</p>
+        <p>/api/v1.0/websiteStatus - GET - Get details about a websiteURL taking account of all the votes registered towards the website and domain</p></div>
       </div>
+    </section>
+    <section class="section">
+      <h3>Smart Contract</h3>
+      <div class="text_contract">
+        <h4>Functions</h4>
+        <div>Submit Vote / Mint Function:
+          <ul>
+            <li>Must have voter role to call the function directly using the user wallet</li>
+            <li>Accepts domainName, shortURL, urlHash, category, tag</li>
+            <li>Creates a struct for the review with the tokenId & owner so that only 1 NFT is minted in lieu of the urlHash</li>
+            <li>Event Log</li>
+          </ul>
+        </div>
+        <div>
+          Delegate Vote Submission / Mint on behalf of the voter:
+          <ul>
+            <li>Must have moderator role to call this function to create the NFT and make the voter its owner</li>
+            <li>Accepts domainName, shortURL, urlHash, category, tag and owner</li>
+            <li>Creates a struct for the review with the tokenId & owner so that only 1 NFT is minted in lieu of the urlHash</li>
+            <li>Event Log</li>
+          </ul>
+        </div>
+        <div>Find token details by voter address and urlHash</div>
+        <div>Delete Function:
+          <ul>
+            <li>Only token owner or approved can burn the token</li>
+            <li>Burn the Token - Delete the Review</li>
+          </ul>
+        </div>
+        <div>Update the category</div>
+        <div>Update the tag</div>
+      </div>
+    </section> 
+    <div class="footer">
+      <p class="website__rights">© NetSepio 2021.  All rights reserved || by <a href="https://lazarus.network/">Lazarus Network</a></p>
     </div>
-    <script src="../app.js"></script>
-
-
-</body>
+  </body>
 </html>
+
+<!--
+
+Machine Learning Model
+
+
+
+-->

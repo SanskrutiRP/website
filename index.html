@@ -2,55 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>NetSepio</title>
+    <link rel="icon" href="gallery/icon.ico">
+    <link rel="stylesheet" href="style.css" />
     <link
     rel="stylesheet"
     href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
     crossorigin="anonymous"
-  />
-    <title>NetSepio Hompage</title>
+    />
 </head>
 <body>
-  <section class="showcase">
-    <header>
-      <h2 class="logo"><img src="/gallery/icon.png"> NetSepio</h2>
-      <div class="toggle"></div>
-    </header>
-    <video src="gallery/galaxy.mp4" muted loop autoplay></video>
-    <div class="overlay"></div>
-
-    <div class="text">
-      <h2>Browser Extension </h2> 
-      <h3>The new norm</h3>
-      <h3>See what makes us different</h3>
-      <p>NetSepio browser extension allows users to vote for a website/domain categorizing it into various categories and 
-        get rewards. The user can be aware of the threats like Tracking, Malware, Drive-By Downloads, Adware, Phishing,
-        Cryptojacking, etc. and also can report the website for having unsafe content.</p>
-      <a href="/explore/explore.html">Explore</a>
+  <div class="contents">
+    <div class="header">
+      <div class="combo"><img alt="image" src="gallery/icon.png">
+      <p class="logo">NetSepio</p></div>
+      <img id="toggle" src="gallery/menu.png" alt="image">
     </div>
-    <ul class="social">
-      <li><a href="https://www.facebook.com/NetSepio/"><i class="fab fa-facebook"></i></a></li>
-      <li><a href="https://github.com/NetSepio"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://twitter.com/NetSepio"><i class="fab fa-twitter"></i></a></li>
-
-      <li><a href="./contact/contactForm.html">Contact Form</a></li>
-     
-      <p class="website__rights">© NetSepio 2021. All rights reserved || by<li><a href="https://lazarus.network/">Lazarus Network</a></li></p>
-
-    </ul>
-  </section>
-  <div class="menu">
+    <div class="main">
+      <div class="text">
+        <h1>Browser Extension</h1>
+        <h2>The new norm</h2>
+      </div>
+      <div class="svg_here"></div>
+    </div>
+    <div class="mid">
+        <h3>See what makes us different</h3>
+        <p>NetSepio browser extension allows users to vote for a website/domain categorizing it into various categories and get rewards. The user can be aware of the threats like Tracking, Malware, Drive-By Downloads, Adware, Phishing, Cryptojacking, etc. and also can report the website for having unsafe content.</p>
+    </div>
+    <div class="contact">
+        <div class="left">
+          <h4>Contact us</h4>
+          <div class="addr">
+            <p> Sector 8, Dwarka New Delhi, India 110077</p>
+            <p>+91 895 1415 895</p>
+            <p>connect@lazarus.network</p>
+          </div>
+          <div class="handles">
+            <a href="https://www.facebook.com/NetSepio/"><img src="gallery/facebook.svg"></a>
+            <a href="https://github.com/NetSepio"><img src="gallery/github.svg"></a>
+            <a href="https://twitter.com/NetSepio"><img src="gallery/twitter.svg"></a>
+          </div>
+        </div>
+        <div class="contact_form">
+          <form >
+            <label>Full Name</label>
+            <input type="text" name="fname" required="true" placeholder="Harry Potter">
+            <label>Email Id</label>
+            <input type="email" name="emailid" required="true" placeholder="your@mail.com">
+            <label>Subject</label>
+            <input type="text" name="sub" required="true" placeholder="Want help">
+            <label>Message</label>
+            <textarea rows="5" cols="30" required="true" placeholder="Your Message"></textarea>
+            <div class="btns">
+              <input id="submit" type="submit" name="send" value="Send">
+              <input id="cancel" type="reset" name="cancel" value="Cancel">
+            </div>
+          </form>
+        </div>
+    </div>
+    <div class="footer">
+    <p class="website__rights">© NetSepio 2021. All rights reserved || by <a href="https://lazarus.network/">Lazarus Network</a></p>
+    </div>
+    <div class="menu" id="menu">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="/about/about.html">About</a></li>
-      <li><a href="/features/feature.html">Features</a></li>
-      <li><a href="/specification/specification.html">Specifications</a></li>
+      <li><a href="about/about.html">About</a></li>
+      <li><a href="features/feature.html">Features</a></li>
+      <li><a href="specification/specification.html">Specifications</a></li>
+      <li id="close">Close</li>
     </ul>
   </div>
-
   <script src="app.js"></script>
+  </div>
 </body>
 </html>
