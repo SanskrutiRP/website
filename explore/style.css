@@ -24,23 +24,71 @@ h2{
 }
 .section{
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     padding: 3rem;
 }
-.section p{
-    padding: 1rem 5rem;
-    border: 1px solid white;
+.does{
+    position: relative;
 }
-p:hover{
-    color: #2ec4b6;
-    border: 1px solid #2ec4b6;   
-    box-shadow: 0 4px 8px #222, 0 -6px 10px #222;
+.does p{
+    position: absolute;
+    width: 22%;
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    border: 1px solid #ff9f1c;
+    box-shadow: 0 4px 20px #222, 0 -2px 10px #999;
+}
+.does p:nth-child(1){
+    left: 0;
+}
+.does p:nth-child(2){
+    left: 15%;
+}
+.does p:nth-child(3){
+    left: 30%;
+}
+.does p:nth-child(4){
+    left: 45%;
+}
+.does p:nth-child(5){
+    left: 60%;
+}
+.does p:nth-child(6){
+    left: 75%;
+}
+.does p:hover{
+    z-index: 1;
+    margin-right: 1rem;
+    border: none;
+    border-left: .5rem solid #ff9f1c;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 20px #222, 0 -2px 25px #999;
+}
+.footer{
+    position: absolute;
+    top: 300vh;
+    text-align: center;
+    width: 100%;
 }
 @media (max-width: 360px){
     .section{
         padding: 2rem;
     }
     .section p{
-        padding: 1rem;        
+        padding: 1rem; 
+        width: 90%;       
+        position: relative;
+        left: 0 !important;
+        min-height: 50vh;
+        box-shadow: 0 4px 10px #222, 0 -2px 8px #999;
+    }
+    .does p:hover{
+        box-shadow: 0 4px 10px #222, 0 -2px 15px #999;
+    }
+    .footer{
+        position: relative;
+        top: 0;
     }
 }

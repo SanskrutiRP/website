@@ -1,14 +1,6 @@
-
-.contents{
-  display: flex;
-  flex-direction: column;
-  padding: 0 1rem;
-}
-
 .main{
-  width: 90%;
-  margin: 3rem 1rem 0 1rem;
-  padding: 1rem 3rem;
+  width: 100%;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,9 +8,9 @@
   background-color: #ff9f1c;
 }
 .mid{
-  width: 90%;
-  margin: 0rem 1rem 0 1rem;
-  padding: 2rem 3rem;
+  width: 100%;
+  /*margin: 0rem 1rem 0 1rem;*/
+  padding: 2rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,6 +18,9 @@
   background-color: #fff;
   color: black;
   height: 70vh;
+}
+.mid h3, p{
+  padding: 1rem 5rem;
 }
 .text{
   display: flex;
@@ -77,9 +72,9 @@
 .contact{
   display: flex;
   background-color: #2ec4b6;
-  width: 90%;
-  padding: 1rem 3rem;
-  margin: 0 1rem;
+  width: 100%;
+  /*padding: 1rem 3rem;*/
+ /* margin: 0 1rem;*/
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -88,7 +83,8 @@
 .contact_form{
     border: 2px solid white;
     padding: 1rem 2rem;
-    width: 80%;
+    width: 70%;
+    margin: 0 2rem;
     text-align: left;
 }
 .contact_form form{
@@ -113,8 +109,8 @@ textarea{
     letter-spacing: 2px;
 }
 .left{
-    padding: 5rem 2rem;
-    width: 20%;
+    padding: 5rem 1rem;
+    width: 30%;
     color: white;
 }
 .left ul{
@@ -196,8 +192,8 @@ textarea{
         padding: 0;
     }
     .mid{
-        width: 70%;
-        margin-left: 0;
+        width: 100%;
+        height: 100vh;
         flex-direction: column;
     }
     .svg_here{
@@ -208,14 +204,14 @@ textarea{
       text-align: center;
     }
     .text h1{
-      font-size: 2rem;
+      font-size: 3rem;
     }
     .text h2{
-      font-size: 1em;
+      font-size: 1.5rem;
       line-height: .9em;
     }
     .contact{
-        width: 70%;
+        width: 100%;
         margin-left: 0;
         flex-direction: column;
         border-bottom: 1rem solid #EC970F;
@@ -226,6 +222,9 @@ textarea{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .addr p{
+        padding: 0rem 1rem;
     }
     .contact_form{
         border: none;
