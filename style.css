@@ -9,6 +9,7 @@
 }
 .mid{
   width: 100%;
+  /*margin: 0rem 1rem 0 1rem;*/
   padding: 2rem 0rem;
   display: flex;
   flex-direction: column;

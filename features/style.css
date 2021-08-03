@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body, html{
     height: 100%;
     margin: 0;
@@ -50,7 +50,7 @@ body a:hover{
   height:25px;
   width: 30px;
   right: 1%;
-}
+}*/
 .section{
     text-align: center;
     width: 100%;
@@ -185,6 +185,7 @@ body a:hover{
 }
 .cond{
     width: 50% !important;
+
 }
 .section-dark{
     position: relative;
@@ -202,9 +203,7 @@ h2{
  h2:hover{
     color: #EC970F;
 }
-.options{
 
-}
 .option{
     width: 50%;
     background-color: white;
@@ -305,6 +304,7 @@ h2{
 }
 .feature2 p{
   width: 60%;
+  font-size: 1rem;
 }
 .title_feature2{
     width: 70% !important;

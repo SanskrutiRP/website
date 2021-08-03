@@ -15,16 +15,17 @@ body a:hover{
     color: #EC970F;
 }
 .header{
-    width: 98%;
+    width: 100%;
     position: absolute;
     display: flex;
     height: 5%;
     font-size: 25px;
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: #121212;
     z-index: 1;
 }
 .combo img{
+    padding: 0 0 0 1rem;
     animation: 3s scaleImg infinite;
 }
 @keyframes scaleImg{
@@ -49,7 +50,8 @@ body a:hover{
   position: absolute;
   height:25px;
   width: 30px;
-  right: 2%;
+  right: 1%;
+  padding-right: .5rem;
 }
 
 
@@ -89,9 +91,12 @@ body a:hover{
 }
 @media(max-width: 360px){
     .header{
-        width: 90%;
+        width: 100%;
     }
     .menu{
       width: 100%;
+    }
+    .contact_form{
+        padding: 1rem;
     }
 }
